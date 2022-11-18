@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Hotash\Installer\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class InstallerCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-installer';
 
     public $description = 'My command';
 
