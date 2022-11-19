@@ -2,9 +2,9 @@
 
 namespace Hotash\Installer\Tests;
 
+use Hotash\Installer\InstallerServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Hotash\Installer\InstallerServiceProvider;
 
 class TestCase extends Orchestra
 {

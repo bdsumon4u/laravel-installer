@@ -2,9 +2,9 @@
 
 namespace Hotash\Installer;
 
+use Hotash\Installer\Commands\InstallerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Hotash\Installer\Commands\InstallerCommand;
 
 class InstallerServiceProvider extends PackageServiceProvider
 {
@@ -19,6 +19,8 @@ class InstallerServiceProvider extends PackageServiceProvider
             ->name('laravel-installer')
             ->hasConfigFile()
             ->hasViews()
+            ->hasAssets()
+            ->hasRoute('web')
             ->hasMigration('create_laravel-installer_table')
             ->hasCommand(InstallerCommand::class);
     }
